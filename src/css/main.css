@@ -1,3 +1,107 @@
-@import "variables.css";
-@import "base.css";
-@import "components/hero.css";
+/* brand colors
+ text-color: #dff7ed;
+ text-color-darken: #95a59e;
+ special-text-color: #cf71af;
+ background-color: #0a050500 #0a0505;
+ border-color: #f08080;
+
+ font sizes mobile
+ text-size: 1.5rem;
+ h1-size: 1px;
+ h2-size: 1px;
+ h3-size: 1px; */
+
+body {
+  background-image: url("../images/img/website-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: overlay;
+
+  color: #dff7ed;
+
+  display: unset;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* |||nav-bar#######||| */
+.nav-bar {
+  height: 2rem;
+
+  background: #0a0505;
+  border-bottom: solid #f08080;
+
+  position: sticky;
+  top: 0px;
+}
+
+/* |nav_list'''''''| */
+.nav-bar__nav-selections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: relative;
+  top: 50%;
+  translate: 0 -50%;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar__nav-selections_nav-selection {
+  color: #dff7ed;
+  text-decoration: none;
+}
+
+.nav-bar__nav-selections_nav-selection {
+  color: #dff7ed;
+  text-decoration: none;
+}
+
+.nav-bar__nav-selections_nav-selection:hover {
+  color: #95a59e;
+}
+
+.nav-bar__nav-selections_nav-selection:active {
+  color: #cf71af;
+}
+
+/* |||header#######||| */
+.header {
+  height: 75vh;
+
+  background-image: url("../images/img/header-homepage-cropped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+
+  border-bottom: solid #f08080;
+}
+
+/* ||burger-menu=======|| */
+
+.burger-menu {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(95%) sepia(11%) saturate(247%) hue-rotate(102deg)
+    brightness(100%) contrast(95%);
+}
+
+.nav-bar__nav-selections_nav-selection:hover {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(73%) sepia(7%) saturate(424%) hue-rotate(102deg)
+    brightness(88%) contrast(88%);
+}
+
+.burger-menu:active {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(80%) sepia(13%) saturate(7151%) hue-rotate(283deg)
+    brightness(87%) contrast(84%);
+}

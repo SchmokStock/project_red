@@ -1,22 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
+    <!-- <link
       rel="stylesheet"
-    />
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>project-website</title>
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
+    <!-- |||nav-bar#######||| -->
+    <nav class="nav-bar">
+      <!-- |nav-list'''''''| -->
+      <div class="nav-bar__nav-selections">
+        <a class="nav-bar__nav-selections_nav-selection" href="#">main</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage1</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage2</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage3</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">main</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage1</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage2</a>
+        <a class="nav-bar__nav-selections_nav-selection" href="#">subpage3</a>
+        <!-- ||burger-menu=======|| -->
+        <img
+          class="burger-menu"
+          src="images/svg/burger-menu.svg"
+          alt="contents"
+        />
+      </div>
+    </nav>
+
+    <!-- |||header#######||| -->
+    <header class="header"></header>
+
+    <!-- |||main#######||| -->
     <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
+      <!-- ||section-one=======|| -->
+      <section>
+        <!-- |Einführung'''''''| -->
+        <p>
+          Einführung Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis ad itaque, voluptatum excepturi reprehenderit molestias
+          tempora nobis numquam quae impedit repellat laudantium incidunt.
+          Libero, suscipit enim optio itaque veniam nihil? Einführung Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ad
+          itaque, voluptatum excepturi reprehenderit molestias tempora nobis
+          numquam quae impedit repellat laudantium incidunt. Libero, suscipit
+          enim optio itaque veniam nihil? Einführung Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Perspiciatis ad itaque, voluptatum
+          excepturi reprehenderit molestias tempora nobis numquam quae impedit
+          repellat laudantium incidunt. Libero, suscipit enim optio itaque
+          veniam nihil? Einführung Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Perspiciatis ad itaque, voluptatum excepturi
+          reprehenderit molestias tempora nobis numquam quae impedit repellat
+          laudantium incidunt. Libero, suscipit enim optio itaque veniam nihil?
+          Einführung Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis ad itaque, voluptatum excepturi reprehenderit molestias
+          tempora nobis numquam quae impedit repellat laudantium incidunt.
+          Libero, suscipit enim optio itaque veniam nihil?
+        </p>
+
+        <!-- |Inhaltsverzeichnis'''''''| -->
+        <ol>
+          <li>
+            <ol>
+              <li></li>
+              <li></li>
+            </ol>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+
+      <!-- ||aussehen=======|| -->
+      <section>
+        <!-- |outfit'''''''| -->
+        <article></article>
+        <article></article>
+      </section>
+
+      <section></section>
+      <section></section>
+      <section></section>
     </main>
-    <script src="/js/index.js" type="module"></script>
+    <!-- |||footer#######||| -->
+    <footer></footer>
   </body>
 </html>
