@@ -1,0 +1,15 @@
+// brand colors
+$text-co: #dff7ed;
+$text-co-darken: #95a59e;
+$highlighted-text-co: #cf71af;
+$background-co: #0a0505;
+$border-co: #f08080;
+
+// svg
+$svg-black: brightness(0%) saturate(100%);
+$svg-co: invert(95%) sepia(11%) saturate(247%) hue-rotate(102deg)
+  brightness(100%) contrast(95%);
+$svg-co-darken: invert(73%) sepia(7%) saturate(424%) hue-rotate(102deg)
+  brightness(88%) contrast(88%);
+$svg-highlighted-co: invert(80%) sepia(13%) saturate(7151%) hue-rotate(283deg)
+  brightness(87%) contrast(84%);

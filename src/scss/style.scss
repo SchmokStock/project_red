@@ -1,0 +1,81 @@
+@use "abstracts" as a;
+@use "mixins/base.scss" as base;
+
+body {
+  @include base.base;
+
+  // todo: put another homepage background in or put the girl to the right side
+  background-image: url("../images/img/website-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: overlay;
+
+  color: a.$text-co;
+}
+
+/* |||nav-bar#######||| */
+.nav-bar {
+  height: 2rem;
+
+  background: #0a0505;
+  border-bottom: solid #f08080;
+
+  position: sticky;
+  top: 0px;
+}
+
+/* |nav_list'''''''| */
+.nav-bar__nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: relative;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.nav-bar__nav-container_item {
+  color: a.$text-co;
+  text-decoration: none;
+
+  &:hover {
+    color: a.$text-co-darken;
+  }
+  &:active {
+    color: a.$highlighted-text-co;
+  }
+}
+
+/* |||header#######||| */
+.header {
+  height: 75vh;
+
+  background-image: url("../images/img/header-homepage-cropped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+
+  border-bottom: solid #f08080;
+}
+
+/* ||burger-menu=======|| */
+
+.burger-menu {
+  filter: a.$svg-black;
+  filter: a.$svg-co;
+}
+
+.nav-bar__nav-selections_nav-selection:hover {
+  filter: a.$svg-black;
+  filter: a.$svg-co-darken;
+}
+
+.burger-menu:active {
+  filter: a.$svg-black;
+  filter: a.$svg-highlighted-co;
+}
