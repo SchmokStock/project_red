@@ -14,8 +14,8 @@ body {
 }
 
 /* |||nav-bar#######||| */
-.nav-bar {
-  height: 2rem;
+.nav {
+  height: 3rem;
   background: #0a0505;
   border-bottom: solid #f08080;
   position: sticky;
@@ -23,25 +23,72 @@ body {
 }
 
 /* |nav_list'''''''| */
-.nav-bar__nav-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  top: 50%;
-  translate: 0 -50%;
+/* the side navigation menu */
+.nav__option {
+  height: 100vh; /* 100vh Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  background-color: #0a0505;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
+  white-space: nowrap;
+  transition: 0.3s; /* 0.3 second transition effect to slide in the sidenav */
+  padding: 2rem 0;
 }
 
-.nav-bar__nav-container_item {
+.nav__logo {
+  width: 15rem;
+  margin: 2rem 0 1rem 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.nav__item {
+  font-size: 2rem;
   color: #dff7ed;
-  text-decoration: none;
+  display: block;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0;
+  transition: 0.1s;
 }
-.nav-bar__nav-container_item:hover {
-  color: #95a59e;
+.nav__item:hover {
+  color: #626c68;
 }
-.nav-bar__nav-container_item:active {
+.nav__item:active {
   color: #cf71af;
+}
+
+/* ||burger-menu=======|| */
+.burger-menu {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(95%) sepia(11%) saturate(247%) hue-rotate(102deg) brightness(100%) contrast(95%);
+  position: relative;
+  top: 50%;
+  left: 1.25rem;
+  transform: translate(0, -50%);
+}
+.burger-menu:hover {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(73%) sepia(7%) saturate(424%) hue-rotate(102deg) brightness(88%) contrast(88%);
+}
+.burger-menu:active {
+  filter: brightness(0%) saturate(100%);
+  filter: invert(80%) sepia(13%) saturate(7151%) hue-rotate(283deg) brightness(87%) contrast(84%);
+}
+
+/* Position and style the close button (top right corner) */
+.nav__close-btn {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  color: #dff7ed;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* |||header#######||| */
@@ -53,22 +100,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   border-bottom: solid #f08080;
-}
-
-/* ||burger-menu=======|| */
-.burger-menu {
-  filter: brightness(0%) saturate(100%);
-  filter: invert(95%) sepia(11%) saturate(247%) hue-rotate(102deg) brightness(100%) contrast(95%);
-}
-
-.nav-bar__nav-selections_nav-selection:hover {
-  filter: brightness(0%) saturate(100%);
-  filter: invert(73%) sepia(7%) saturate(424%) hue-rotate(102deg) brightness(88%) contrast(88%);
-}
-
-.burger-menu:active {
-  filter: brightness(0%) saturate(100%);
-  filter: invert(80%) sepia(13%) saturate(7151%) hue-rotate(283deg) brightness(87%) contrast(84%);
 }
 
 /*# sourceMappingURL=style.css.map */

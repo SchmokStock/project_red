@@ -9,29 +9,47 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>project-website</title>
+    <title>project-red</title>
   </head>
   <body>
+    <script src="js/index.js"></script>
+
     <!-- |||nav-bar#######||| -->
-    <nav class="nav-bar">
+    <nav class="nav">
       <!-- |nav-list'''''''| -->
-      <div class="nav-bar__nav-container">
-        <a class="nav-bar__nav-container_item" href="#">Startseite</a>
-        <a class="nav-bar__nav-container_item" href="#">Open-World</a>
-        <a class="nav-bar__nav-container_item" href="#">Charakter</a>
-        <a class="nav-bar__nav-container_item" href="#">Rollen</a>
-        <a class="nav-bar__nav-container_item" href="#">Fertigkeiten</a>
-        <a class="nav-bar__nav-container_item" href="#">Kampf</a>
-        <a class="nav-bar__nav-container_item" href="#">Items</a>
-        <a class="nav-bar__nav-container_item" href="#">NPCs</a>
-        <a class="nav-bar__nav-container_item" href="#">Kampagnennachführung</a>
-        <!-- ||burger-menu=======|| -->
+      <!-- <div> are folder for subpages, <a> are subpages -->
+      <div id="myNavOption" class="nav__option">
+        <a class="nav__close-btn" href="#" onclick="closeNav()">&times;</a>
         <img
-          class="burger-menu"
-          src="images/svg/burger-menu.svg"
-          alt="contents"
+          class="nav__logo"
+          src="images/img/cyberpunk-logo.webp"
+          alt="cyberpunk"
         />
+        <div class="nav__item">Startseite</div>
+        <div class="nav__item">Open-World</div>
+        <div class="nav__item">Charakter</div>
+        <div class="nav__item">
+          <div href="#">Rollen</div>
+          <div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="nav__item">Fertigkeiten</div>
+        <div class="nav__item">Kampf</div>
+        <div class="nav__item">Items</div>
+        <div class="nav__item">NPCs</div>
+        <div class="nav__item">Nachführung</div>
       </div>
+
+      <blz-nav-link></blz-nav-link>
+
+      <!-- ||burger-menu=======|| -->
+      <img
+        class="burger-menu"
+        onclick="openNav()"
+        src="images/svg/burger-menu.svg"
+        alt="Navigation"
+      />
     </nav>
 
     <!-- |||header#######||| -->
@@ -39,7 +57,7 @@
 
     <!-- |||main#######||| -->
     <main>
-      <!-- ||section-one=======|| -->
+      <!-- ||s-one=======|| -->
       <section>
         <!-- |Einführung'''''''| -->
         <p>

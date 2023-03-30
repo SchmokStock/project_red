@@ -16,8 +16,8 @@ body {
 }
 
 /* |||nav-bar#######||| */
-.nav-bar {
-  height: 2rem;
+.nav {
+  height: 3rem;
 
   background: #0a0505;
   border-bottom: solid #f08080;
@@ -27,20 +27,48 @@ body {
 }
 
 /* |nav_list'''''''| */
-.nav-bar__nav-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+/* the side navigation menu */
+.nav__option {
+  height: 100vh; /* 100vh Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
 
-  position: relative;
-  top: 50%;
-  translate: 0 -50%;
+  background-color: a.$background-co;
+
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
+  white-space: nowrap;
+  transition: 0.3s; /* 0.3 second transition effect to slide in the sidenav */
+
+  padding: 2rem 0;
 }
 
-.nav-bar__nav-container_item {
+// .nav__option h3 {
+//   @include base.base;
+// }
+
+.nav__logo {
+  width: 15rem;
+  margin: 2rem 0 1rem 0;
+
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.nav__item {
+  font-size: a.$m-h3-sz;
   color: a.$text-co;
-  text-decoration: none;
+
+  display: block;
+  padding: 1rem 0 1rem 1rem;
+  margin: 0;
+
+  transition: 0.1s;
 
   &:hover {
     color: a.$text-co-darken;
@@ -48,6 +76,38 @@ body {
   &:active {
     color: a.$highlighted-text-co;
   }
+}
+
+/* ||burger-menu=======|| */
+.burger-menu {
+  filter: a.$svg-black;
+  filter: a.$svg-co;
+
+  position: relative;
+  top: 50%;
+  left: 1.25rem;
+  transform: translate(0, -50%);
+
+  &:hover {
+    filter: a.$svg-black;
+    filter: a.$svg-co-darken;
+  }
+
+  &:active {
+    filter: a.$svg-black;
+    filter: a.$svg-highlighted-co;
+  }
+}
+
+/* Position and style the close button (top right corner) */
+.nav__close-btn {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  color: a.$text-co;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* |||header#######||| */
@@ -61,21 +121,4 @@ body {
   background-blend-mode: overlay;
 
   border-bottom: solid #f08080;
-}
-
-/* ||burger-menu=======|| */
-
-.burger-menu {
-  filter: a.$svg-black;
-  filter: a.$svg-co;
-}
-
-.nav-bar__nav-selections_nav-selection:hover {
-  filter: a.$svg-black;
-  filter: a.$svg-co-darken;
-}
-
-.burger-menu:active {
-  filter: a.$svg-black;
-  filter: a.$svg-highlighted-co;
 }

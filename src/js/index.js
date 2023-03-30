@@ -1,7 +1,11 @@
-import myFunction, { multiply } from "./myModule";
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("myNavOption").style.width = "350px";
+  //   document.getElementById("main").style.marginLeft = "250px";
+}
 
-myFunction();
-
-const result = multiply(2, 5);
-
-console.log(result);
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("myNavOption").style.width = "0";
+  //   document.getElementById("main").style.marginLeft = "0";
+}
